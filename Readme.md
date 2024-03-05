@@ -1,17 +1,24 @@
-Harshal Shirsath, shirsath@umd.edu
-Project 1, Perception ENPM673
-Steps to open codes
 
-1. In the folder with name 'shirsath_proj1', there are two problems with sub problems distributed in them.
-2. This folder contains the python file, report and also the results.
-3. Problem 1:(filename: Problem 1.py)
-    1. The video is in the folder by name 'ball.mp4'.
-    2. The path is already provided in the python file: Problem 1.py
-    3. The code will print the curve equation and x_landing coordinate.
+# Perception for Autonomous Robots
+### Trajectory of a Thrown Ball
+#### Instructions:
+1. **Run the script_problem1.py script.**
+2. The script reads a video file (`video.mp4`) and filters the red channel to detect and plot the pixel coordinates of the center point of the ball.
+3. Utilizes Standard Least Squares to fit a curve to the extracted coordinates.
+   - Prints the equation of the curve.
+   - Plots the data with the best fit curve.
+4. Computes the x-coordinate of the ball’s landing spot based on the specified conditions.
 
-4. Problem 2:(filename: Problem 2.py)
-    1. The python file name for this problem is Problem 2.py
-    2.  The pc1.cvs and pc2.csv files are in folder shirsath_proj1.
-    3. The path is already set up for these files when the folder is opened which will make sure the path is connected.
-    4. A pop-up window will show the results of the graphs like SLS,TLS, RANSAC.
-    5. The code will print the magnitude, direction, and also the normal point
+### LIDAR Point Cloud Data Analysis
+#### Instructions:
+1. **Run the script_problem2.py script.**
+2. Computes the covariance matrix and surface normal for the given LIDAR point cloud data in `pc1.csv`.
+3. Implements Standard Least Squares, Total Least Squares, and RANSAC to fit a surface to the data.
+   - Plots the results for each method and provides an interpretation.
+   - Discusses the steps and parameters used in the RANSAC implementation.
+4. Compares and discusses the suitability of outlier rejection methods.
+
+### Additional Notes:
+- Ensure that the required dependencies (OpenCV, Matplotlib) are installed.
+- For any questions or issues, please contact the contributors.
+- Enjoy exploring the fascinating world of perception for autonomous robots!
