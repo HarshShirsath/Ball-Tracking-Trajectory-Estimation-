@@ -2,8 +2,8 @@
 # Perception for Autonomous Robots
 ### Trajectory of a Thrown Ball
 #### Instructions:
-1. **Run the script_problem1.py script.**
-2. The script reads a video file (`video.mp4`) and filters the red channel to detect and plot the pixel coordinates of the center point of the ball.
+1. **Run the problem1.py script.**
+2. The script reads a video file (`ball.mp4`) and filters the red channel to detect and plot the pixel coordinates of the center point of the ball.
 3. Utilizes Standard Least Squares to fit a curve to the extracted coordinates.
    - Prints the equation of the curve.
    - Plots the data with the best fit curve.
@@ -11,7 +11,7 @@
 
 ### LIDAR Point Cloud Data Analysis
 #### Instructions:
-1. **Run the script_problem2.py script.**
+1. **Run the problem2.py script.**
 2. Computes the covariance matrix and surface normal for the given LIDAR point cloud data in `pc1.csv`.
 3. Implements Standard Least Squares, Total Least Squares, and RANSAC to fit a surface to the data.
    - Plots the results for each method and provides an interpretation.
